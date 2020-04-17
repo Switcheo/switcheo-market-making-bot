@@ -28,7 +28,7 @@
     "socket.io-client": "2.1.1",
     "switcheo-js": "^1.2.24",
     "terminal-kit": "^1.35.2",
-    "truffle-hdwallet-provider": "^1.0.10",
+    "truffle-hdwallet-provider": "^1.0.17",
     "web3": "0.20.6",
     "yargs": "^13.2.4"
   },
