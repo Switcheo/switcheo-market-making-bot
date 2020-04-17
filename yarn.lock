@@ -723,6 +723,13 @@
   resolved "https://registry.yarnpkg.com/@types/base-x/-/base-x-1.0.30.tgz#10d078f9fad69d96c8f0dfe80137012a4c692ad7"
   integrity sha512-P++3AZsto5971TC6Cfuvzy57O3qhvhDrFNDgZeTg9UHq5gUyaQ9K1xXTgMXo/4oETVMa6aeDu+XcvkOTJa9zzA==
 
+"@types/bech32@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@types/bech32/-/bech32-1.1.2.tgz#94698784bd3635d4857da9be52343c76c1b448e3"
+  integrity sha512-D2tG6kfIcZD3pjtnnvGrwiZiz+HGBsoy0pdGlpBeMbhlKJ4l4r1zB8SEQPL790kTdSS8lhyC/w9API7L2YBOxw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/bigi@*":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@types/bigi/-/bigi-1.4.2.tgz#8dda60612e689e5769047568d0ce8b8fa83db953"
@@ -841,10 +848,24 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.19.1.tgz#33509849f8e679e4add158959fdb086440e9553f"
   integrity sha512-5qOlnZscTn4xxM5MeGXAMOsIOIKIbh9e85zJWfBRVPlRMEVawzoPhINYbRGkBZCI8LxvBe7tJCdWiarA99OZfQ==
 
+"@types/ripemd160@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/ripemd160/-/ripemd160-2.0.0.tgz#d33e49cf66edf4668828030d4aa80116bbf8ae81"
+  integrity sha512-LD6AO/+8cAa1ghXax9NG9iPDLPUEGB2WWPjd//04KYfXxTwHvlDEfL0NRjrM5z9XWBi6WbKw75Are0rDyn3PSA==
+  dependencies:
+    "@types/node" "*"
+
 "@types/secp256k1@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@types/secp256k1/-/secp256k1-3.5.0.tgz#0f3baf16b07488c6da2633a63b4160bcf8d0fd5b"
   integrity sha512-ZE39QhkIaNK6xbKIp1VLN5O36r97LuslLmRnjAcT0sVDxcfvrk3zqp/VnIfmGza7J6jDxR8dIai3hsCxPYglPA==
+  dependencies:
+    "@types/node" "*"
+
+"@types/sha.js@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@types/sha.js/-/sha.js-2.4.0.tgz#bce682ef860b40f419d024fa08600c3b8d24bb01"
+  integrity sha512-amxKgPy6WJTKuw8mpUwjX2BSxuBtBmZfRwIUDIuPJKNwGN8CWDli8JTg5ONTWOtcTkHIstvT7oAhhYXqEjStHQ==
   dependencies:
     "@types/node" "*"
 
@@ -1109,6 +1130,14 @@ axios@^0.18.0:
   dependencies:
     follow-redirects "^1.3.0"
     is-buffer "^1.1.5"
+
+axios@^0.18.1:
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.1.tgz#ff3f0de2e7b5d180e757ad98000f1081b87bcea3"
+  integrity sha512-0BfJq4NSfQXd+SkFdrvFbG7addhYSBA2mQwISr46pD6E5iqkWg02RAs8vyTT/j0RTnoYmeXauBuSv1qKwR179g==
+  dependencies:
+    follow-redirects "1.5.10"
+    is-buffer "^2.0.2"
 
 babel-jest@^25.3.0:
   version "25.3.0"
@@ -2086,19 +2115,19 @@ debug@4, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "^2.1.1"
 
+debug@=3.1.0, debug@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
   dependencies:
     ms "^2.1.1"
-
-debug@~3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  dependencies:
-    ms "2.0.0"
 
 decamelize@^1.2.0:
   version "1.2.0"
@@ -2956,6 +2985,13 @@ flatted@^2.0.1:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
 
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
+
 follow-redirects@^1.2.5, follow-redirects@^1.3.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
@@ -3486,6 +3522,11 @@ is-buffer@^1.0.2, is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+
+is-buffer@^2.0.2:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.4.tgz#3e572f23c8411a5cfd9557c849e3665e0b290623"
+  integrity sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==
 
 is-callable@^1.1.3, is-callable@^1.1.4:
   version "1.1.4"
@@ -4345,7 +4386,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.17.10, lodash@^4.17.11:
+lodash@^4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -6335,24 +6376,27 @@ swarm-js@0.1.39:
     tar "^4.0.2"
     xhr-request-promise "^0.1.2"
 
-switcheo-js@^1.2.24:
-  version "1.2.24"
-  resolved "https://registry.yarnpkg.com/switcheo-js/-/switcheo-js-1.2.24.tgz#283270cbd90ae680e27cb1eacf0b8acb7d7d81e0"
-  integrity sha512-2zJ2sHq3bg/jDZaJC/eH0qkMTUNjZBZH/8917FjIYPQthgGAfpNBu1ozOTswsvuYzyu66XGpEUcn7Kh1MJMQww==
+switcheo-js@^1.2.25:
+  version "1.2.25"
+  resolved "https://registry.yarnpkg.com/switcheo-js/-/switcheo-js-1.2.25.tgz#b38de7fe5f310ea65b2d7089942dbe71029fe9af"
+  integrity sha512-WOeeI/HHYAUJqt+mnZRzz+cxr52EcI4wx6Bit0tTIhaNM5vWjwDzaridEtoBLFKmalaSg4wNRr8R46+ZeBQUyw==
   dependencies:
     "@cityofzion/neon-core" "~4.0.2"
     "@ledgerhq/hw-app-eth" "5.7.0"
     "@ledgerhq/hw-transport" "5.7.0"
     "@ledgerhq/hw-transport-u2f" "5.7.0"
     "@ledgerhq/hw-transport-webusb" "5.7.0"
+    "@types/bech32" "^1.1.2"
     "@types/bip39" "^2.4.1"
     "@types/bitcoinjs-lib" "^3.2.2"
     "@types/hdkey" "^0.7.0"
     "@types/long" "^4.0.0"
     "@types/node" "^12.7.8"
+    "@types/ripemd160" "^2.0.0"
+    "@types/sha.js" "^2.4.0"
     "@types/sinon" "^7.0.13"
     "@types/wif" "^2.0.1"
-    axios "^0.18.0"
+    axios "^0.18.1"
     bech32 "^1.1.3"
     bignumber.js "^7.2.1"
     bip32 "^2.0.5"
@@ -6366,7 +6410,7 @@ switcheo-js@^1.2.24:
     hdkey "^1.1.0"
     humps "^2.0.1"
     json-stable-stringify "^1.0.1"
-    lodash "^4.17.10"
+    lodash "^4.17.15"
     o3-dapi-core "^0.3.4"
     o3-dapi-neo "^0.6.0"
     ontology-ts-sdk "^1.0.10"
@@ -7105,7 +7149,6 @@ websocket-as-promised@^0.8.0:
 
 websocket@^1.0.28, "websocket@github:web3-js/WebSocket-Node#polyfill/globalThis":
   version "1.0.29"
-  uid "905deb4812572b344f5801f8c9ce8bb02799d82e"
   resolved "https://codeload.github.com/web3-js/WebSocket-Node/tar.gz/905deb4812572b344f5801f8c9ce8bb02799d82e"
   dependencies:
     debug "^2.2.0"
