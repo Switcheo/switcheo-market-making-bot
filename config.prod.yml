@@ -1,0 +1,46 @@
+settings:
+  work_loop_duration: 30000 # ms
+  audit_wallet_frequency: 3 # every n loops
+  inventory_margin_warning: 8
+  inventory_margin_max: 20
+  error_cutoff: 100 # stop bot after n errors
+
+strategies:
+  uniswap_mm:
+    settings:
+      minTick: '1 x' # each quote tick; can be an absolute size, or a multiplier of pair's minTick
+      minQuantity: '1.1 x' # minimum qty for each tick; can be absolute or a multiplier of pair's minQty
+      maxQuantity: '10000 x' # maximum qty for each tick; can be absolute or a multiplier of pair's minQty
+      quantityDelta: '1.1 x' # how much qty is incremented per quote; can be absolute or a multiplier of pair's minQty
+      quantityVariance: '1 %' # NYI: variance in each orders qty; can be absolut eor a % of original qty
+      initialTickProfit: 0 # in bips; increment initial tick quote price by this amount
+      subsequentTickProfit: 0 # in bips; increment subsequent tick quote price by this amount
+      margin: 1 # increase the uniswap inventory by this factor
+      maxQuotes: 15 # max number of quotes on each side to place at once
+      requoteRatio: 0.1 # requote if current qty exceeds more than this factor of required quantity
+  uniswap_mm_v2:
+    settings:
+      minTick: '1 x' # the min diff in price level between each quote; can be an absolute size, or a multiplier of pair's minTick
+      searchTick: '1 x ' # step size to search for the quotable price level; can be an absolute size, or a multiplier of pair's minTick
+      initialTickProfit: 10 # in bips; increment initial tick quote price by this amount
+      subsequentTickProfit: 20 # in bips; increment subsequent tick quote price by this amount
+      margin: 1 # increase the uniswap inventory by this factor
+      maxQuotes: 5 # max number of quotes on each side to place at once
+      requoteRatio: 0.1 # requote if current qty exceeds more than this factor of required quantity
+  squink_mm:
+    settings:
+      initialTickProfit: 10 # in bips; increment initial tick quote price by this amount
+      subsequentTickProfit: 10 # in bips; increment subsequent tick quote price by this amount
+      slippage: 0.95 # 0 - 1 non-inclusive; determines the slippage (which should be based on expected volatility)
+      maxQuotes: 8 # max number of quotes on each side to place at once
+      requoteRatio: 0.1 # requote if current qty exceeds more than this factor of required quantity
+
+wallets:
+  - id: 0
+    blockchain: 'neo'
+    envVarForKey: 'NEO_KEY_1'
+  - id: 1
+    blockchain: 'eth'
+    envVarForKey: 'ETH_KEY_1'
+
+network: 'MainNet'

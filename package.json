@@ -1,0 +1,38 @@
+{
+  "name": "switcheo-market-making-bot",
+  "version": "0.0.1",
+  "description": "Switcheo Market Making Bot",
+  "main": "src/index.js",
+  "repository": "https://github.com/Switcheo/switcheo-market-making-bot",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --no-watchman --force-exit"
+  },
+  "jest": {
+    "verbose": true,
+    "watchman": false
+  },
+  "dependencies": {
+    "@sentry/node": "5.4.0",
+    "bignumber.js": "^8.1.1",
+    "cli-table": "^0.3.1",
+    "decimal.js": "^10.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.11",
+    "log4js": "^6.1.2",
+    "node-fetch": "^2.6.0",
+    "redis": "^2.8.0",
+    "socket.io-client": "2.1.1",
+    "switcheo-js": "^1.2.24",
+    "terminal-kit": "^1.35.2",
+    "truffle-hdwallet-provider": "^1.0.10",
+    "web3": "0.20.6",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
+}
