@@ -29,7 +29,7 @@
     "switcheo-js": "^1.2.25",
     "terminal-kit": "^1.35.2",
     "truffle-hdwallet-provider": "^1.0.17",
-    "web3": "0.20.6",
+    "web3": "1.2.0",
     "yargs": "^13.2.4"
   },
   "devDependencies": {
