@@ -30,7 +30,7 @@
     "terminal-kit": "^1.35.2",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "0.20.6",
-    "yargs": "^13.2.4"
+    "yargs": "^17.0.1"
   },
   "devDependencies": {
     "jest": "^25.3.0"
